@@ -1,0 +1,20 @@
+ 
+  .sidebar-wrapper{
+    width:300px;
+    height: 100%;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    background-color: #212529;
+}
+.sidebar-wrapper ul {
+
+}
+.sidebar-wrapper ul li {
+  list-style: none;
+  margin-top: 25px;
+  color: dodgerblue;
+  cursor: pointer;
+}
