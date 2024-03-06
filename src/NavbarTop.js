@@ -22,7 +22,9 @@ const NavbarTop = () => {
                         <button type="button" className="btn btn-outline-dark">EnterPrices 4</button>
                     </div>
                 </div>
+                <hr />
                 </div>
+                
   );
 };
 export default NavbarTop
