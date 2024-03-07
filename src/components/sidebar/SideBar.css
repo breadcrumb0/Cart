@@ -1,6 +1,6 @@
  
   .sidebar-wrapper{
-    width:300px;
+   width: 300px;
     height: 100%;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */

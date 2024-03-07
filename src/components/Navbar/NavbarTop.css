@@ -1,0 +1,13 @@
+.nav-wrapper
+{
+    
+}
+
+.nav{
+ margin-bottom: 15px;
+}
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

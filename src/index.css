@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+  }
+  
+
+  .main {
+    margin-left: 300px; /* Adjust margin to accommodate sidebar width */
+    flex: 1; /* Allow main content to take remaining space */
+    padding: 20px; /* Add some padding */
+  }
+  
+  /* Styles for Navbar and MainSection components can be defined here */
+  

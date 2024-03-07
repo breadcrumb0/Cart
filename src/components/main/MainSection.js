@@ -1,7 +1,7 @@
 import './MainSection.css'
 const MainSection = () => {
   return (
-    <div className='main'>
+    <div >
       <div className="btn-wrapper">
         <div className="btn-list">
           <button type="button" className="btn btn-outline-primary ">
