@@ -1,6 +1,7 @@
-import React from 'react'
+
 import JsonData from './Data.json'
 const Home = () => {
+
   const DisplayData=JsonData.map(
     (info)=>{
         return(
@@ -13,7 +14,7 @@ const Home = () => {
         })
   return (
     <div>
-    <table class="table table-striped">
+    <table id="example" class="table table-striped">
         <thead>
             <tr>
             <th>Sr.NO</th>

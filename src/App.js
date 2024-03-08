@@ -5,9 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideBar from './components/sidebar/SideBar';
 import NavbarTop from './components/Navbar/NavbarTop';
 import MainSection from './components/main/MainSection';
-import item from './components/tables/item/item'
-import stock from './components/tables/stock/stock';
 import Home from './components/tables/home/Home';
+import DisplayData from './components/tables/data/DisplayData';
 
 function App() {
   return (
@@ -19,8 +18,9 @@ function App() {
       <MainSection />
       <Routes>
             <Route  path="/" element={<Home/>} exact />
-            <Route path="/item" component={item} />
-            <Route path="/stock" component={stock} />
+            <Route path="/item" component={<item/>} />
+            <Route path="/stock" component={<stock/>} />
+            <Route path='/Datatable' component={<DisplayData/>} />
       </Routes>
     </div>
   </div>
