@@ -1,5 +1,4 @@
-import React from 'react';
-import { useTable, useSortBy, usePagination, useFilters } from 'react-table';
+import { useTable, useSortBy, usePagination, useFilters } from "react-table";
 
 const Data = ({ columns, data }) => {
   const {
@@ -34,9 +33,13 @@ const Data = ({ columns, data }) => {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                  {column.render('Header')}
+                  {column.render("Header")}
                   <span>
-                    {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ''}
+                    {column.isSorted
+                      ? column.isSortedDesc
+                        ? " 🔽"
+                        : " 🔼"
+                      : ""}
                   </span>
                 </th>
               ))}
@@ -49,7 +52,9 @@ const Data = ({ columns, data }) => {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
-                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>;
+                  return (
+                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  );
                 })}
               </tr>
             );
@@ -64,7 +69,7 @@ const Data = ({ columns, data }) => {
           Next
         </button>
         <div>
-          Page{' '}
+          Page{" "}
           <em>
             {pageIndex + 1} of {pageOptions.length}
           </em>
