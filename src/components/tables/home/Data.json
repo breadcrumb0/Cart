@@ -1,48 +1,142 @@
-
 [
-	{
-		"id":1,
-		"name":"Akshit",
-		"city":"Moradabad"
-	}, 
-	{
-		"id":2,
-		"name":"Nikita",
-		"city":"Lucknow"
-	},
-	{
-		"id":3,
-		"name":"Deeksha",
-		"city":"Noida"
-	},
-	{
-		"id":4,
-		"name":"Ritesh",
-		"city":"Delhi"
-	},
-	{
-		"id":5,
-		"name":"Somya",
-		"city":"Gurugram"
-	},
-	{
-		"id":6,
-		"name":"Eshika",
-		"city":"Mumbai"
-	},
-	{
-		"id":7,
-		"name":"Kalpana",
-		"city":"Rampur"
-	},
-	{
-		"id":8,
-		"name":"Parul",
-		"city":"Chandigarh"
-	},
-	{
-		"id":9,
-		"name":"Himani",
-		"city":"Dehradun"
-	}
+    {
+        "slNo": 1,
+        "item": "Item1",
+        "currentStock": "Location1",
+        "purchasePrice": 100,
+        "salesPrice": 120
+    },
+    {
+        "slNo": 2,
+        "item": "Item2",
+        "currentStock": "Location2",
+        "purchasePrice": 200,
+        "salesPrice": 220
+    },
+    {
+        "slNo": 3,
+        "item": "Item3",
+        "currentStock": "Location3",
+        "purchasePrice": 300,
+        "salesPrice": 320
+    },
+    {
+        "slNo": 4,
+        "item": "Item4",
+        "currentStock": "Location4",
+        "purchasePrice": 400,
+        "salesPrice": 420
+    },
+    {
+        "slNo": 5,
+        "item": "Item5",
+        "currentStock": "Location5",
+        "purchasePrice": 500,
+        "salesPrice": 520
+    },
+    {
+        "slNo": 6,
+        "item": "Item6",
+        "currentStock": "Location6",
+        "purchasePrice": 600,
+        "salesPrice": 620
+    },
+    {
+        "slNo": 7,
+        "item": "Item7",
+        "currentStock": "Location7",
+        "purchasePrice": 700,
+        "salesPrice": 720
+    },
+    {
+        "slNo": 8,
+        "item": "Item8",
+        "currentStock": "Location8",
+        "purchasePrice": 800,
+        "salesPrice": 820
+    },
+    {
+        "slNo": 9,
+        "item": "Item9",
+        "currentStock": "Location9",
+        "purchasePrice": 900,
+        "salesPrice": 920
+    },
+    {
+        "slNo": 10,
+        "item": "Item10",
+        "currentStock": "Location10",
+        "purchasePrice": 1000,
+        "salesPrice": 1020
+    },
+    {
+        "slNo": 11,
+        "item": "Item11",
+        "currentStock": "Location11",
+        "purchasePrice": 1100,
+        "salesPrice": 1120
+    },
+    {
+        "slNo": 12,
+        "item": "Item12",
+        "currentStock": "Location12",
+        "purchasePrice": 1200,
+        "salesPrice": 1220
+    },
+    {
+        "slNo": 13,
+        "item": "Item13",
+        "currentStock": "Location13",
+        "purchasePrice": 1300,
+        "salesPrice": 1320
+    },
+    {
+        "slNo": 14,
+        "item": "Item14",
+        "currentStock": "Location14",
+        "purchasePrice": 1400,
+        "salesPrice": 1420
+    },
+    {
+        "slNo": 15,
+        "item": "Item15",
+        "currentStock": "Location15",
+        "purchasePrice": 1500,
+        "salesPrice": 1520
+    },
+    {
+        "slNo": 16,
+        "item": "Item16",
+        "currentStock": "Location16",
+        "purchasePrice": 1600,
+        "salesPrice": 1620
+    },
+    {
+        "slNo": 17,
+        "item": "Item17",
+        "currentStock": "Location17",
+        "purchasePrice": 1700,
+        "salesPrice": 1720
+    },
+    {
+        "slNo": 18,
+        "item": "Item18",
+        "currentStock": "Location18",
+        "purchasePrice": 1800,
+        "salesPrice": 1820
+    },
+    {
+        "slNo": 19,
+        "item": "Item19",
+        "currentStock": "Location19",
+        "purchasePrice": 1900,
+        "salesPrice": 1920
+    },
+    {
+        "slNo": 20,
+        "item": "Item20",
+        "currentStock": "Location20",
+        "purchasePrice": 2000,
+        "salesPrice": 2020
+    }
 ]

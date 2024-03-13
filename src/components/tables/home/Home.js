@@ -1,33 +1,52 @@
+import { useState } from "react";
+import JsonData from "./Data.json";
 
-import JsonData from './Data.json'
 const Home = () => {
+    //Searching
+const [serchQuery,setSearchQuery]=useState('')
 
-  const DisplayData=JsonData.map(
-    (info)=>{
-        return(
-            <tr>
-                <td>{info.id}</td>
-                <td>{info.name}</td>
-                <td>{info.city}</td>
-            </tr>
-        )
-        })
-  return (
-    <div>
-    <table id="example" class="table table-striped">
-        <thead>
-            <tr>
-            <th>Sr.NO</th>
-            <th>Name</th>
-            <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            {DisplayData}
-        </tbody>
-    </table>
-</div>
-  )
+const handleSearch=(e)=>{
+    const query=e.target.value;
+    setSearchQuery(query)
 }
 
-export default Home
+//Table data
+  const DisplayData = JsonData.map((item) => {
+    return (
+      <tr key={item.slNo}>
+        <td>{item.slNo}</td>
+        <td>{item.item}</td>
+        <td>{item.currentStock}</td>
+        <td>{item.purchasePrice}</td>
+        <td>{item.salesPrice}</td>
+      </tr>
+    );
+  });
+  return (
+    <div>
+         {/*search */}  
+<input
+className="form-control"
+type="text"
+placeholder="Search by item name..."
+value={serchQuery}
+onChange={handleSearch}
+/>
+        {/*table data */}
+      <table id="example" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Sl No</th>
+            <th>Item</th>
+            <th>Current Stock</th>
+            <th>Purchase Price</th>
+            <th>Sales Price</th>
+          </tr>
+        </thead>
+        <tbody>{DisplayData}</tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Home;
