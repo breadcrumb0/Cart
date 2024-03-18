@@ -1,17 +1,18 @@
 import { useState } from "react";
 import JsonData from "./Data.json";
+import SearchItem from "./SearchItem";
 
 const Home = () => {
     //Searching
-const [serchQuery,setSearchQuery]=useState('')
+const [search, setSearch]=useState('')
 
-const handleSearch=(e)=>{
-    const query=e.target.value;
-    setSearchQuery(query)
-}
+  // Filter items based on search term
+  const filteredItems = JsonData.filter((item) =>
+    item.item.toLowerCase().includes(search.toLowerCase())
+  );
 
 //Table data
-  const DisplayData = JsonData.map((item) => {
+  const DisplayData = filteredItems.map((item) => {
     return (
       <tr key={item.slNo}>
         <td>{item.slNo}</td>
@@ -25,14 +26,10 @@ const handleSearch=(e)=>{
   return (
     <div>
          {/*search */}  
-<input
-className="form-control"
-type="text"
-placeholder="Search by item name..."
-value={serchQuery}
-onChange={handleSearch}
-/>
-        {/*table data */}
+         <SearchItem
+         setSearch={setSearch}
+         />
+     {/*table data */}
       <table id="example" class="table table-striped">
         <thead>
           <tr>

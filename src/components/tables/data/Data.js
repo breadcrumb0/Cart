@@ -1,5 +1,4 @@
 import { useTable, useSortBy, usePagination, useFilters } from "react-table";
-
 const Data = ({ columns, data }) => {
   const {
     getTableProps,

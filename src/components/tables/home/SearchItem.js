@@ -1,7 +1,18 @@
 
-const SearchItem = () => {
+const SearchItem = ({setSearch}) => {
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value);
+  };
   return (
-    <div>SearchItem</div>
+    <>
+    <input
+className="form-control"
+type="text"
+placeholder="Search by item name..."
+onChange={handleSearch}
+/>
+</>
   )
 }
 
